@@ -19,13 +19,14 @@ import {
 import {
   Colors
 } from 'react-native/Libraries/NewAppScreen';
-import { List } from './src/list'
+import { NestedButton } from './src/nestedButton'
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     flex: 1,
+    justifyContent: 'center',
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
@@ -53,7 +54,7 @@ const App = () => {
 
         />
       </View>
-      <List />
+      <NestedButton />
     </SafeAreaView>
   );
 };
